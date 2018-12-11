@@ -48,12 +48,19 @@ public class BulkyBaggageDesk {
         return 0;
     }
 
-    BaggageIdentificationTag checkIn(BoardingPass boardingPass, Baggage baggage){
-        return baggageIdentificationTag;
-    }
+    BaggageIdentificationTag checkIn(BoardingPass boardingPass, Baggage baggage){ return BaggageIdentificationTag;  }
 
     BaggageIdentificationTag printBaggageIdentificationTag(){ return BaggageIdentificationTag;}
 
-    
+    void place(BaggageIdentificationTag baggageIdentificationTag, Baggage baggage){};
 
+    void place(Baggage baggage, LuggageTub luggageTub){};
+
+    void sendLuggageTubToBaggageSortingUnit(LuggageTub luggageTub){};
+
+    void refillLuggageTubListFromCheckInDesk(){};
+
+    void notifyGroundOperations(BulkyBaggageDeskReceipt bulkyBaggageDeskReceipt){};
+
+    void close(){};
 }
