@@ -5,5 +5,5 @@ public class ReadingDevice {
     private String uuid;
     private String type;
     private String id;
-    
+
 }
