@@ -1,16 +1,28 @@
 package Airport.Bulky_Baggage_Desk;
 
+import Airport.Airport.Airport;
+import Airport.Base.BaggageIdentificationTag;
+import Airport.Base.Employee;
+import Airport.Base.LuggageTub;
+import Airport.Base.Passenger;
+
+import java.util.ArrayList;
+
 public class BulkyBaggageDesk {
 
     private String uuid;
-    private SecurityCheckID securityCheckID;
+    private int id;
     private Airport airport;
-    private List<Employee> employeeList;
-    private FederalPoliceOfficer policeOfficer;
-    private List<String> scanPatternList;
-    private IBaggageScanner baggageScanner;
-    private IBodyScanner bodyScanner;
-    private IExplosivesDetector explosivesDetector;
-    private FederalPolice federalPolice;
+    private Employee employee;
+    private IReadingDevice readingDevice;
+    private ArrayList<LuggageTub> luggageTubList;
+    private Passenger currentPassenger;
+    private int numberOfPassenger;
+    private int numberOfBulkyBaggage;
+    private ArrayList<BaggageIdentificationTag> baggageIdentificationTagList;
+    private boolean isOpen;
+
+
+    
 
 }
