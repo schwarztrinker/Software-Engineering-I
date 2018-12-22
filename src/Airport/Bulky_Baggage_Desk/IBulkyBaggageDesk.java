@@ -1,20 +1,20 @@
 package Airport.Bulky_Baggage_Desk;
 
-
 import Airport.Base.*;
 
-public interface IBulkyBaggageDesk {
+import java.util.ArrayList;
 
+public interface IBulkyBaggageDesk {
     void open();
     boolean scan(Passport passport);
-    boolean scan (BoardingPass boardingPass);
+    boolean scan(BoardingPass boardingPass);
     double weight(Baggage baggage);
     BaggageIdentificationTag checkIn(BoardingPass boardingPass, Baggage baggage);
     BaggageIdentificationTag printBaggageIdentificationTag();
-    void place(BaggageIdentificationTag baggageIdentificationTag, Baggage baggage);
     void place(Baggage baggage, LuggageTub luggageTub);
+    void place(BaggageIdentificationTag baggageIdentificationTag);
+    void notifyGroundOperations(BulkyBaggageDeskReceipt bulkyBaggageDeskReceipt, ArrayList<BaggageIdentificationTag> baggageIdentificationTagList);
     void sendLuggageTubToBaggageSortingUnit(LuggageTub luggageTub);
-    void refillLuggageTubListFromCheckInDesk();
-    void notifyGroundOperations(BulkyBaggageDeskReceipt bulkyBaggageDeskReceipt);
     void close();
+    
 }
