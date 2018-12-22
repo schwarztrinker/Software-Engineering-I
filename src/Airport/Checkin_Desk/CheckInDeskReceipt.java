@@ -35,4 +35,53 @@ public class CheckInDeskReceipt {
         this.numberOfNormalBaggage = numberOfNormalBaggage;
         this.numberOfPassenger = numberOfPassenger;
     }
+
+
+    public String getUuid() {
+        return uuid;
+    }
+
+    public int getCheckInDeskId() {
+        return checkInDeskId;
+    }
+
+    public TicketClass getTicketClass() {
+        return ticketClass;
+    }
+
+    public String getFlight() {
+        return flight;
+    }
+
+    public Destination getDestination() {
+        return destination;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public String getBoardingTime() {
+        return boardingTime;
+    }
+
+    public GateID getGateID() {
+        return gateID;
+    }
+
+    public int getNumberOfPassenger() {
+        return numberOfPassenger;
+    }
+
+    public int getNumberOfNormalBaggage() {
+        return numberOfNormalBaggage;
+    }
+
+    public int getNumberOfBoardingPass() {
+        return numberOfBoardingPass;
+    }
+
+    public int getNumberOfBaggageIdentificationTag() {
+        return numberOfBaggageIdentificationTag;
+    }
 }
